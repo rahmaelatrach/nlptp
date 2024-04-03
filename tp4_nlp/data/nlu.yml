@@ -1,0 +1,216 @@
+version: "3.1"
+entities:
+  - country
+nlu:
+  - intent: thanks
+    examples: |
+      - thanks
+      - thank you
+      - thanks a lot
+      - thank you so much
+      - Thank you very much
+      - I'm grateful to you
+      - I appreciate it
+      - Thanks a bunch
+      - Many thanks
+      - Much obliged
+      - Thank you kindly
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+      - hep
+      - Howdy!
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+       - I'm off, talk to you later
+      - Have a great day
+      - Until next time
+      - Bye for now
+      - Take care
+      - Catch you later
+      - Farewell
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - Exactly
+      - That's right
+      - Absolutely
+      - Sure thing
+      - You bet
+      - Of course
+      - Yes, indeed
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+      - No, not at all
+      - I disagree
+      - I don't think so
+      - Definitely not
+      - I beg to differ
+      - I'm afraid not
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+      - I'm feeling fantastic
+      - Everything's going great
+      - I'm on cloud nine
+      - I'm feeling wonderful
+      - I'm ecstatic
+      - I'm in a great mood
+      - Couldn't be better
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+      - I'm feeling down
+      - I'm feeling blue
+      - Things aren't going too well
+      - I'm a bit sad
+      - I'm feeling terrible
+      - I'm not okay
+      - I'm feeling low
+      - Today's been rough
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+       - are you a human?
+       - am I talking to a bot?
+       - am I talking to a human?
+       - are you an ia machine?
+       - how am I talking to?
+       - are you a robot?
+       - what kind of bot are you?
+       - are you an artifical intelligence bot?
+  - intent: bot_ask
+    examples: |
+      - are you a good?
+      - and you?
+      - how are you?
+      - are you ok?
+      - How are you doing?
+      - Any updates?
+      - Are you still there?
+      - Everything okay on your end?
+      - How's life on the other side?
+      - What's new with you?
+      - Are you functioning properly?
+  - intent: not_understood
+    examples: |
+      - gjha
+      - je suis sdsj
+      - hhhza
+  - intent: help
+    examples: |
+      - how can you help me?
+      - what are you made for?
+      - are you sure you can help?
+      - help me.
+      - I am a little confused here.
+      - what can you do for me?
+      - anything else
+      - are there any other options?
+      - come back
+      - help please
+      - hep
+
+  - intent: ask_capital
+    examples: |
+      - What is the capital of [Afghanistan](country)?
+      - What is the capital of [Morocco](country)?
+      - Can you tell me about [Germany](country)?
+      - Can you tell me about [Morocco](country)?
+      - give me information about [Morocco](country)?
+      - What is the capital of [Algeria](country)?
+
+  - intent: weather
+    examples: |
+      - what's the weather
+      - i want to know the weather of today
+      - tell me the weather forecast
+      - how's the weather today
+      - How's the weather looking?
+      - What's the temperature going to be?
+      - What's the weather prediction?
+      - Show me today's weather conditions
+
+  - intent: city
+    examples: |
+      - Delhi
+      - delhi
+      - Amsterdam
+      - Paris
+      - mumbai
+      - Berlin
+      - Casablanca
+      - Rabat
+      - Marrakech
+      - Fes
+      - Tangier
+      - Agadir
+      - Meknes
+      - Oujda
+      - Kenitra
+      - Tetouan

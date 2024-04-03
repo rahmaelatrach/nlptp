@@ -1,0 +1,53 @@
+version: "3.1"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: Not understood response
+    steps:
+      - intent: not_understood
+      - action: utter_help
+  - story: story_capital
+    steps:
+      - intent: ask_capital
+      - action: get_country_capital
+  - story: asking good
+    steps:
+      - intent: bot_ask
+      - action: action_ask_help
+
+  - story: happy weather
+    steps:
+      - intent: weather
+      - action: utter_city
+      - intent: city
+      - action: action_weather_api
+  - story: Thanks the bot
+    steps:
+      - intent: thanks
+      - action: utter_thanks
